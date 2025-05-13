@@ -1,0 +1,13 @@
+prefix=E:/python/Projects/ML_First_Project/myvenv/Library
+exec_prefix=E:/python/Projects/ML_First_Project/myvenv/Library
+libdir=E:/python/Projects/ML_First_Project/myvenv/Library/lib
+sharedlibdir=E:/python/Projects/ML_First_Project/myvenv/Library/lib
+includedir=E:/python/Projects/ML_First_Project/myvenv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
