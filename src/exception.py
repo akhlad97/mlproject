@@ -1,6 +1,6 @@
 import sys  # Provides access to exception details like traceback
-import logging  # Used to log messages (info, warning, error, etc.)
-# from src.logger import logging
+#import logging  # Used to log messages (info, warning, error, etc.)
+from src.logger import logging
 
 # Function to extract detailed error message from exception
 def error_message_details(error, error_detail: sys):
@@ -20,11 +20,3 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message  # Return the detailed message when printed
-
-# # Main execution block — runs only when this script is run directly testinf above code 
-# if __name__ == "__main__":
-#     try:
-#         1 / 0  # Intentionally cause a ZeroDivisionError
-#     except Exception as e:
-#         logging.info('Division by sero error')  # Log that logging has started
-#         raise CustomException(e, sys)  # Raise custom exception with detailed error info
